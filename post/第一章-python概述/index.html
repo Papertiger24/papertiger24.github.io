@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>第一章 Python概述 // Paperfish&#39;s blog</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.77.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Paperfish" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://paperfish24.gitee.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="第一章 Python概述"/>
+<meta name="twitter:description" content="第一章 Python概述 1.4 Python编码规范  严格使用缩进来体现代码的逻辑从属关系，一般以4个空格为一个缩进单位 每个import语句只导入一个模块，最好按标准库、扩展库、自定义库的顺序依次导入。尽量避免导入整个库，最好只导入需要使用的对象 最好在每个类、函数定义和一段完整的功能代码之后增加一个空行，在运算符两侧各增加一个空格，逗号后面增加一个空格 不要写过长的语句，拆分或者用续行符\，或者用()把多行语句抱起来表示是一条语句 书写复杂表达式时，再适当位置加上括号 对关键代码和重要的业务逻辑进行必要的注释，用#（用于单行注释）和三引号：(```)（用于大段说明性文本的注释）  1.5 扩展库安装方法 在Python中，库或者模块，是指一个包含函数定义、类定义或常量的Python程序文件
+在标准的Python安装包中，只包含了标准库，并不包含任何扩展库，根据需要再选择合适的扩展库进行安装和使用
+1.6 标准库与扩展库中对象的导入与使用 1. import 模块名 [as 别名] 2. from 模块名 import 对象名 [as 别名] 3. from 模块名 import * 1. import 模块名 [as 别名] 使用时需要再对象之前加上模块名作为前缀，必须以模块名.对象名的形式进行访问。
+模块名名字很长时可以设置别名，以别名.对象名的形式访问
+2. from 模块名 import 对象名 [as 别名] 导入明确指定的对象，并且可以起别名。不需要使用模块名作为前缀
+3. from 模块名 import * 一次导入模块中所有对象，可以直接使用模块中的所有对象而不需要再使用模块名作为前缀，一般不推荐
+1.7 Python程序的_name_属性 除了可以在开发环境中或命令提示符环境中直接运行，Python程序文件还可以作为模块导入并使用其中的对象。通过Python程序的_name_属性可以识别程序的使用方法，如果作为模块被导入，其属性的值被自动设置为模块名；如果作为程序直接运行，其属性值被设定为字符串“_main_&quot;。"/>
+
+    <meta property="og:title" content="第一章 Python概述" />
+<meta property="og:description" content="第一章 Python概述 1.4 Python编码规范  严格使用缩进来体现代码的逻辑从属关系，一般以4个空格为一个缩进单位 每个import语句只导入一个模块，最好按标准库、扩展库、自定义库的顺序依次导入。尽量避免导入整个库，最好只导入需要使用的对象 最好在每个类、函数定义和一段完整的功能代码之后增加一个空行，在运算符两侧各增加一个空格，逗号后面增加一个空格 不要写过长的语句，拆分或者用续行符\，或者用()把多行语句抱起来表示是一条语句 书写复杂表达式时，再适当位置加上括号 对关键代码和重要的业务逻辑进行必要的注释，用#（用于单行注释）和三引号：(```)（用于大段说明性文本的注释）  1.5 扩展库安装方法 在Python中，库或者模块，是指一个包含函数定义、类定义或常量的Python程序文件
+在标准的Python安装包中，只包含了标准库，并不包含任何扩展库，根据需要再选择合适的扩展库进行安装和使用
+1.6 标准库与扩展库中对象的导入与使用 1. import 模块名 [as 别名] 2. from 模块名 import 对象名 [as 别名] 3. from 模块名 import * 1. import 模块名 [as 别名] 使用时需要再对象之前加上模块名作为前缀，必须以模块名.对象名的形式进行访问。
+模块名名字很长时可以设置别名，以别名.对象名的形式访问
+2. from 模块名 import 对象名 [as 别名] 导入明确指定的对象，并且可以起别名。不需要使用模块名作为前缀
+3. from 模块名 import * 一次导入模块中所有对象，可以直接使用模块中的所有对象而不需要再使用模块名作为前缀，一般不推荐
+1.7 Python程序的_name_属性 除了可以在开发环境中或命令提示符环境中直接运行，Python程序文件还可以作为模块导入并使用其中的对象。通过Python程序的_name_属性可以识别程序的使用方法，如果作为模块被导入，其属性的值被自动设置为模块名；如果作为程序直接运行，其属性值被设定为字符串“_main_&quot;。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://paperfish24.gitee.io/post/%E7%AC%AC%E4%B8%80%E7%AB%A0-python%E6%A6%82%E8%BF%B0/" />
+<meta property="article:published_time" content="2020-10-31T15:34:07+08:00" />
+<meta property="article:modified_time" content="2020-10-31T15:34:07+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://paperfish24.gitee.io"><img class="app-header-avatar" src="/avatar.jpg" alt="Paperfish" /></a>
+      <h1>Paperfish&#39;s blog</h1>
+      <p>在读学生，垃圾一枚，努力学习中...</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/gohugoio" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/gohugoio" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">第一章 Python概述</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Oct 31, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <h1 id="第一章-python概述">第一章 Python概述</h1>
+<h2 id="14-python编码规范">1.4 Python编码规范</h2>
+<ul>
+<li>严格使用缩进来体现代码的逻辑从属关系，一般以4个空格为一个缩进单位</li>
+<li>每个import语句只导入一个模块，最好按标准库、扩展库、自定义库的顺序依次导入。尽量避免导入整个库，最好只导入需要使用的对象</li>
+<li>最好在每个类、函数定义和一段完整的功能代码之后增加一个空行，在运算符两侧各增加一个空格，逗号后面增加一个空格</li>
+<li>不要写过长的语句，拆分或者用续行符<code>\</code>，或者用<code>()</code>把多行语句抱起来表示是一条语句</li>
+<li>书写复杂表达式时，再适当位置加上括号</li>
+<li>对关键代码和重要的业务逻辑进行必要的注释，用<code>#</code>（用于单行注释）和<code>三引号：(```)</code>（用于大段说明性文本的注释）</li>
+</ul>
+<h2 id="15-扩展库安装方法">1.5 扩展库安装方法</h2>
+<p>在Python中，库或者模块，是指一个包含函数定义、类定义或常量的Python程序文件</p>
+<p>在标准的Python安装包中，只包含了标准库，并不包含任何扩展库，根据需要再选择合适的扩展库进行安装和使用</p>
+<h2 id="16-标准库与扩展库中对象的导入与使用">1.6 标准库与扩展库中对象的导入与使用</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">1.</span> <span style="color:#f92672">import</span> <span style="color:#960050;background-color:#1e0010">模块名</span> [<span style="color:#66d9ef">as</span> <span style="color:#960050;background-color:#1e0010">别名</span>]
+<span style="color:#ae81ff">2.</span> <span style="color:#f92672">from</span> <span style="color:#960050;background-color:#1e0010">模块名</span> <span style="color:#f92672">import</span> <span style="color:#960050;background-color:#1e0010">对象名</span> [<span style="color:#66d9ef">as</span> <span style="color:#960050;background-color:#1e0010">别名</span>]
+<span style="color:#ae81ff">3.</span> <span style="color:#f92672">from</span> <span style="color:#960050;background-color:#1e0010">模块名</span> <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</code></pre></div><h3 id="1-import-模块名-as-别名">1. import 模块名 [as 别名]</h3>
+<p>使用时需要再对象之前加上模块名作为前缀，必须以<code>模块名.对象名</code>的形式进行访问。</p>
+<p>模块名名字很长时可以设置别名，以<code>别名.对象名</code>的形式访问</p>
+<h3 id="2-from-模块名-import-对象名-as-别名">2. from 模块名 import 对象名 [as 别名]</h3>
+<p>导入明确指定的对象，并且可以起别名。<strong>不需要使用模块名作为前缀</strong></p>
+<h3 id="3-from-模块名-import-">3. from 模块名 import *</h3>
+<p>一次导入模块中所有对象，可以直接使用模块中的所有对象而<strong>不需要再使用模块名作为前缀</strong>，一般不推荐</p>
+<h2 id="17-python程序的_name_属性">1.7 Python程序的<code>_name_</code>属性</h2>
+<p>除了可以在开发环境中或命令提示符环境中直接运行，Python程序文件还可以作为模块导入并使用其中的对象。通过Python程序的<code>_name_</code>属性可以识别程序的使用方法，如果作为模块被导入，其属性的值被自动设置为模块名；如果作为程序直接运行，其属性值被设定为字符串“<code>_main_</code>&quot;。</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
