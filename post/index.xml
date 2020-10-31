@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Paperfish&#39;s blog</title>
-    <link>https://paperfish24.gitee.io/post/</link>
+    <link>https://github.com/Papertiger24/papertiger24.github.io/post/</link>
     <description>Recent content in Posts on Paperfish&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 31 Oct 2020 15:39:33 +0800</lastBuildDate><atom:link href="https://paperfish24.gitee.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Oct 2020 15:39:33 +0800</lastBuildDate><atom:link href="https://github.com/Papertiger24/papertiger24.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第三章 Python序列结构</title>
-      <link>https://paperfish24.gitee.io/post/%E7%AC%AC%E4%B8%89%E7%AB%A0-python%E5%BA%8F%E5%88%97%E7%BB%93%E6%9E%84/</link>
+      <link>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E4%B8%89%E7%AB%A0-python%E5%BA%8F%E5%88%97%E7%BB%93%E6%9E%84/</link>
       <pubDate>Sat, 31 Oct 2020 15:39:33 +0800</pubDate>
       
-      <guid>https://paperfish24.gitee.io/post/%E7%AC%AC%E4%B8%89%E7%AB%A0-python%E5%BA%8F%E5%88%97%E7%BB%93%E6%9E%84/</guid>
+      <guid>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E4%B8%89%E7%AB%A0-python%E5%BA%8F%E5%88%97%E7%BB%93%E6%9E%84/</guid>
       <description>第三章 Python序列结构 1. 序列概述 容器类结构，用于包含大量数据。丛书否有序分为有序序列和无序序列，从是否可变分为可变序列和不可变序列。
 有序序列：列表、元组、字符产
 无序序列：字典、集合
@@ -29,10 +29,10 @@
     
     <item>
       <title>第二章 内置对象、运算符、表达式、关键字</title>
-      <link>https://paperfish24.gitee.io/post/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E8%BF%90%E7%AE%97%E7%AC%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+      <link>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E8%BF%90%E7%AE%97%E7%AC%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%85%B3%E9%94%AE%E5%AD%97/</link>
       <pubDate>Sat, 31 Oct 2020 15:37:31 +0800</pubDate>
       
-      <guid>https://paperfish24.gitee.io/post/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E8%BF%90%E7%AE%97%E7%AC%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+      <guid>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E8%BF%90%E7%AE%97%E7%AC%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
       <description>第二章 内置对象、运算符、表达式、关键字 1. Python常用内置对象 Python中一切都是对象。内置对象可以直接使用，标准库对象需要导入后使用，扩展库对象需要先安装相应的扩展库然后才能导入并使用。
 1. 常量与变量 变量的值可以改变，变量的类型也可以改变。在Python中，不需要事先声明变量名及其类型，赋值语句可以直接创建任意类型的变量。
 赋值语句的执行过程是：首先把等号右侧表达式的值计算出来，然后在内存中寻找一个位置把值存储进去，最后创建变量并指向这个内存地址。也就是说，**Python变量并不直接存储值，而实存储了值的内存地址或者引用。
@@ -51,10 +51,10 @@ x = &amp;#39;Hello World&amp;#39; x = &amp;#34;Hello World&amp;#34; x = &amp;#39
     
     <item>
       <title>第一章 Python概述</title>
-      <link>https://paperfish24.gitee.io/post/%E7%AC%AC%E4%B8%80%E7%AB%A0-python%E6%A6%82%E8%BF%B0/</link>
+      <link>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E4%B8%80%E7%AB%A0-python%E6%A6%82%E8%BF%B0/</link>
       <pubDate>Sat, 31 Oct 2020 15:34:07 +0800</pubDate>
       
-      <guid>https://paperfish24.gitee.io/post/%E7%AC%AC%E4%B8%80%E7%AB%A0-python%E6%A6%82%E8%BF%B0/</guid>
+      <guid>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E4%B8%80%E7%AB%A0-python%E6%A6%82%E8%BF%B0/</guid>
       <description>第一章 Python概述 1.4 Python编码规范  严格使用缩进来体现代码的逻辑从属关系，一般以4个空格为一个缩进单位 每个import语句只导入一个模块，最好按标准库、扩展库、自定义库的顺序依次导入。尽量避免导入整个库，最好只导入需要使用的对象 最好在每个类、函数定义和一段完整的功能代码之后增加一个空行，在运算符两侧各增加一个空格，逗号后面增加一个空格 不要写过长的语句，拆分或者用续行符\，或者用()把多行语句抱起来表示是一条语句 书写复杂表达式时，再适当位置加上括号 对关键代码和重要的业务逻辑进行必要的注释，用#（用于单行注释）和三引号：(```)（用于大段说明性文本的注释）  1.5 扩展库安装方法 在Python中，库或者模块，是指一个包含函数定义、类定义或常量的Python程序文件
 在标准的Python安装包中，只包含了标准库，并不包含任何扩展库，根据需要再选择合适的扩展库进行安装和使用
 1.6 标准库与扩展库中对象的导入与使用 1. import 模块名 [as 别名] 2. from 模块名 import 对象名 [as 别名] 3. from 模块名 import * 1. import 模块名 [as 别名] 使用时需要再对象之前加上模块名作为前缀，必须以模块名.对象名的形式进行访问。
@@ -66,10 +66,10 @@ x = &amp;#39;Hello World&amp;#39; x = &amp;#34;Hello World&amp;#34; x = &amp;#39
     
     <item>
       <title>My</title>
-      <link>https://paperfish24.gitee.io/post/myfirst/</link>
+      <link>https://github.com/Papertiger24/papertiger24.github.io/post/myfirst/</link>
       <pubDate>Sat, 31 Oct 2020 15:00:21 +0800</pubDate>
       
-      <guid>https://paperfish24.gitee.io/post/myfirst/</guid>
+      <guid>https://github.com/Papertiger24/papertiger24.github.io/post/myfirst/</guid>
       <description>Hello everyone!</description>
     </item>
     
