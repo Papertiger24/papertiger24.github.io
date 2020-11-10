@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Paperfish" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="https://github.com/Papertiger24/papertiger24.github.io/css/main.scss" />
+    <link rel="stylesheet" href="https://github.com/Papertiger24/papertiger24.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
 
     
     <meta name="twitter:card" content="summary"/>
@@ -51,7 +51,7 @@ x = &#39;Hello World&#39; x = &#34;Hello World&#34; x = &#39;&#39;&#39;Hello Wor
   </head>
   <body>
     <header class="app-header">
-      <a href="https://github.com/Papertiger24/papertiger24.github.io"><img class="app-header-avatar" src="/Papertiger24/papertiger24.github.io/avatar.jpg" alt="Paperfish" /></a>
+      <a href="https://github.com/Papertiger24/papertiger24.github.io"><img class="app-header-avatar" src="https://github.com/Papertiger24/papertiger24.github.io/avatar.jpg" alt="Paperfish" /></a>
       <h1>Paperfish&#39;s blog</h1>
       <p>在读学生，垃圾一枚，努力学习中...</p>
       <div class="app-header-social">
@@ -170,7 +170,7 @@ x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello wo
 <p>还有复合赋值运算符，如<code>+=</code>、<code>-=</code>等</p>
 <h2 id="3-python常用内置函数用法">3. Python常用内置函数用法</h2>
 <p>内置函数不需要导入任何模块即可使用，具有非常快的运行速度</p>
-<p>使用<code>dir(_buildins_)</code>可以查看所有内置函数和内置对象，使用<code>help(函数名)</code>可以查看某个函数的使用方法</p>
+<p>使用<code>dir(__buildins__)</code>可以查看所有内置函数和内置对象，使用<code>help(函数名)</code>可以查看某个函数的使用方法</p>
 <h3 id="1-类型转换与判断">1. 类型转换与判断</h3>
 <ol>
 <li>
@@ -224,10 +224,10 @@ True
 <span style="color:#f92672">&gt;&gt;&gt;</span> max([<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;111&#39;</span>], key <span style="color:#f92672">=</span> len)		<span style="color:#75715e">#指定规则为字符串长度</span>
 <span style="color:#e6db74">&#39;111&#39;</span>
 </code></pre></div><h3 id="3-基本输入输出">3. 基本输入/输出</h3>
-<p><code>imput()</code>和<code>print()</code>时基本输入/输出函数，前者用来接收用户的键盘输入，后者用来把数据以指定的格式输出到标准控制台或指定的文件对象，不论用户输入什么，<code>input()</code>一律作为字符串对待，必要时使用类型转换</p>
+<p><code>input()</code>和<code>print()</code>时基本输入/输出函数，前者用来接收用户的键盘输入，后者用来把数据以指定的格式输出到标准控制台或指定的文件对象，不论用户输入什么，<code>input()</code>一律作为字符串对待，必要时使用类型转换</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> x <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#39;Please input your name: &#39;</span>)		<span style="color:#75715e">#input()参数表示提示信息</span>
 Please input your name: Tom
-</code></pre></div><p><code>print()</code>参数中sep用来指定分隔符（默认为空格），end用来指定结尾</p>
+</code></pre></div><p><code>print()</code>参数中<code>sep</code>用来指定分隔符（默认为空格），<code>end</code>用来指定结尾</p>
 <h3 id="4-排序与逆序">4. 排序与逆序</h3>
 <p><code>sorted()</code>可以对列表、元组、字典、集合或其他可迭代的对象进行排序并返回新列表，支持使用key参数指定排序规则</p>
 <p><code>reversed()</code>可以对可迭代对象（生成器对象和具有惰性求值特性的zip、map、flitter、enumerate等类似的对象除外）进行翻转（首尾交换），并返回可迭代的reversed对象</p>
@@ -262,8 +262,10 @@ Please input your name: Tom
 <span style="color:#f92672">&lt;</span>filter object at <span style="color:#ae81ff">0x000001E9D82F9F70</span><span style="color:#f92672">&gt;</span>
 <span style="color:#f92672">&gt;&gt;&gt;</span> list(filter(func, seq))		<span style="color:#75715e">#把filter对象转换为list对象</span>
 [<span style="color:#e6db74">&#39;foo&#39;</span>, <span style="color:#e6db74">&#39;x41&#39;</span>]
-</code></pre></div><h3 id="7-rangestart-stop-step返回具有惰性求值特性的range对象包含左闭右开区间start-stop内的以step为步长的整数步长可以是负数此时start要比end大">7. <code>range([start, ]stop[, step])</code>返回具有惰性求值特性的range对象，包含左闭右开区间[start, stop]内的以step为步长的整数（步长可以是负数，此时start要比end大）</h3>
-<h3 id="8-zip把多个可迭代对象中对应位置上的元素压缩到一起返回一个可迭代的zip对象其中每个元素都是包含原来多个可迭代对象对应位置上元素的元组最终结果中包含的元素个数取决于所有参数序列或可迭代对象中最短的那个">8. <code>zip()</code>把多个可迭代对象中对应位置上的元素压缩到一起，返回一个可迭代的zip对象，其中每个元素都是包含原来多个可迭代对象对应位置上元素的元组，最终结果中包含的元素个数取决于所有参数序列或可迭代对象中最短的那个。</h3>
+</code></pre></div><h3 id="7-rangestart-stop-step">7. <code>range([start, ]stop[, step])</code></h3>
+<p>返回具有惰性求值特性的range对象，包含左闭右开区间[start, stop]内的以step为步长的整数（步长可以是负数，此时start要比end大）</p>
+<h3 id="8-zip">8. <code>zip()</code></h3>
+<p>把多个可迭代对象中对应位置上的元素压缩到一起，返回一个可迭代的zip对象，其中每个元素都是包含原来多个可迭代对象对应位置上元素的元组，最终结果中包含的元素个数取决于所有参数序列或可迭代对象中最短的那个。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;</span> list(zip(<span style="color:#e6db74">&#39;abcd&#39;</span>, [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]))		<span style="color:#75715e">#压缩字符串和列表</span>
 [(<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#ae81ff">1</span>), (<span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#ae81ff">2</span>), (<span style="color:#e6db74">&#39;c&#39;</span>, <span style="color:#ae81ff">3</span>)]
 <span style="color:#f92672">&gt;&gt;&gt;</span> list(zip(<span style="color:#e6db74">&#39;abcd&#39;</span>))		<span style="color:#75715e">#对一个字符串也能压缩，多个参数也能压缩(&gt;=2)</span>

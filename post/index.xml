@@ -5,7 +5,36 @@
     <link>https://github.com/Papertiger24/papertiger24.github.io/post/</link>
     <description>Recent content in Posts on Paperfish&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 31 Oct 2020 15:39:33 +0800</lastBuildDate><atom:link href="https://github.com/Papertiger24/papertiger24.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Nov 2020 17:57:57 +0800</lastBuildDate><atom:link href="https://github.com/Papertiger24/papertiger24.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第五章 函数</title>
+      <link>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Tue, 10 Nov 2020 17:57:57 +0800</pubDate>
+      
+      <guid>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%87%BD%E6%95%B0/</guid>
+      <description>第五章 函数 1. 函数定义与使用 1. 基本语法 def 函数名([参数列表]) &amp;#39;&amp;#39;&amp;#39;注释&amp;#39;&amp;#39;&amp;#39; 函数体 def需要注意的问题：
+ 不需要说明形参类型，Python会根据实参的值自动推断参数类型 不需要指定函数返回值类型，由其中的return语句的值来确定 即使函数不需要接受任何参数，也必须保留一对空的圆括号 函数头部括号后面的冒号必不可少 函数体相对于def关键字必须保持一定的空格缩进  2. 递归函数 一个函数中直接或者间接地又调用了该函数自身，叫做递归调用。
+函数递归通常用来把一个大型的复杂问题层层转化为一个与原来问题本质相同但规模很小、很容易解决或描述的问题，只需要很少的代码就可以描述解决问题过程中需要的大量重复计算。要注意：
+ 每次递归应保持问题性质不变 每次递归应使用更小或更简单的输入 必须有一个能够直接处理而不需要再次进行递归的特殊情况来保证递归过程可以结束 函数递归深度不能太大，否则引起内存崩溃  2. 函数参数 函数定义时圆括号中的是逗号分隔开的形参列表，函数可有可无参数但是定义和调用时的圆括号不可少。
+1. 位置参数 调用函数时实参和形参的顺序必须一致，并且数量相同。
+2. 默认值参数 在定义函数时，可以为形参设置默认值。在调用带有默认值参数的函数时，可以不用为设置了默认值的形参进行传值，此时函数将会直接使用函数定义时设置的默认值，当然也可以通过显式赋值来替换其默认值。
+注意，在定义带有默认值参数的函数时，任何一个默认值参数右边都不能再出现没有默认值的普通位置函数，否则会提示语法错误。
+def 函数名(..., 形参名 = 默认值): 函数体 &amp;gt;&amp;gt;&amp;gt; def demo(string, times = 1): print((string+&amp;#39; &amp;#39;)*times) &amp;gt;&amp;gt;&amp;gt; demo(&amp;#39;Hello&amp;#39;)	#当不显式赋值时，则使用默认值 Hello &amp;gt;&amp;gt;&amp;gt; demo(&amp;#39;Hello&amp;#39;, 3) Hello Hello Hello 3. 关键参数 通过关键参数可以按参数名字传递值，明确指定哪个值传递给哪个参数，实参顺序可以和形参顺序不一致，但不影响参数值的传递结果，避免了用户需要牢记参数位置和顺序的麻烦，使得函数的调用和参数传递更加灵活。
+&amp;gt;&amp;gt;&amp;gt; def demo(string, times = 1): print((string+&amp;#39; &amp;#39;)*times) &amp;gt;&amp;gt;&amp;gt; demo(times = 5, string = &amp;#39;World&amp;#39;) World World World World World 4.</description>
+    </item>
+    
+    <item>
+      <title>第四章 选择结构与循环结构</title>
+      <link>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84%E4%B8%8E%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Tue, 10 Nov 2020 17:56:42 +0800</pubDate>
+      
+      <guid>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84%E4%B8%8E%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</guid>
+      <description>第四章 选择结构与循环结构 1. 条件表达式 条件表达式的值只要不是False、0(或0.0、0j等)、空值None、空列表、空元组、空集合、空字典、空字符串、空range对象或其他可迭代对象，Python均认为与True等价。
+在条件表达式中常用的运算符：关系运算符（如误写=将抛出异常），逻辑运算符
+2. 选择结构 1. 单分支选择结构 if 表达式: 语句块 2.双分支选择结构 if 表达式: 语句块 else: 语句块 三元运算符value1 if condition else value2，满足条件value1，否则value2
+3. 多分支选择结构 if 表达式1: 语句块1 elif 表达式2:	#elif为else if的缩写 语句块2 elif 表达式3: 语句块3 ...... else: 语句块n 4. 选择结构的嵌套 if 表达式1: 语句块1 if 表达式2: 语句块2	#注意控制缩进量 else: 语句块3 else: if 表达式4: 语句块4 3. 循环结构 1. for循环与while循环 while 条件表达式: 循环体 [else:	#else可没有，在不满足循环条件时进入else中 else子句代码块] for 取值 in 序列或迭代对象: 循环体 [else: else子句代码块] 2.</description>
+    </item>
+    
     <item>
       <title>第三章 Python序列结构</title>
       <link>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E4%B8%89%E7%AB%A0-python%E5%BA%8F%E5%88%97%E7%BB%93%E6%9E%84/</link>
@@ -55,22 +84,16 @@ x = &amp;#39;Hello World&amp;#39; x = &amp;#34;Hello World&amp;#34; x = &amp;#39
       <pubDate>Sat, 31 Oct 2020 15:34:07 +0800</pubDate>
       
       <guid>https://github.com/Papertiger24/papertiger24.github.io/post/%E7%AC%AC%E4%B8%80%E7%AB%A0-python%E6%A6%82%E8%BF%B0/</guid>
-      <description>第一章 Python概述 1.4 Python编码规范  严格使用缩进来体现代码的逻辑从属关系，一般以4个空格为一个缩进单位 每个import语句只导入一个模块，最好按标准库、扩展库、自定义库的顺序依次导入。尽量避免导入整个库，最好只导入需要使用的对象 最好在每个类、函数定义和一段完整的功能代码之后增加一个空行，在运算符两侧各增加一个空格，逗号后面增加一个空格 不要写过长的语句，拆分或者用续行符\，或者用()把多行语句抱起来表示是一条语句 书写复杂表达式时，再适当位置加上括号 对关键代码和重要的业务逻辑进行必要的注释，用#（用于单行注释）和三引号：(```)（用于大段说明性文本的注释）  1.5 扩展库安装方法 在Python中，库或者模块，是指一个包含函数定义、类定义或常量的Python程序文件
+      <description>第一章 1.4 Python编码规范  严格使用缩进来体现代码的逻辑从属关系，一般以4个空格为一个缩进单位 每个import语句只导入一个模块，最好按标准库、扩展库、自定义库的顺序依次导入。尽量避免导入整个库，最好只导入需要使用的对象 最好在每个类、函数定义和一段完整的功能代码之后增加一个空行，在运算符两侧各增加一个空格，逗号后面增加一个空格 不要写过长的语句，拆分或者用续行符\，或者用()把多行语句抱起来表示是一条语句 书写复杂表达式时，再适当位置加上括号 对关键代码和重要的业务逻辑进行必要的注释，用#（用于单行注释）和三引号：(```)（用于大段说明性文本的注释）  1.5 扩展库安装方法 在Python中，库或者模块，是指一个包含函数定义、类定义或常量的Python程序文件
 在标准的Python安装包中，只包含了标准库，并不包含任何扩展库，根据需要再选择合适的扩展库进行安装和使用
-1.6 标准库与扩展库中对象的导入与使用 1. import 模块名 [as 别名] 2. from 模块名 import 对象名 [as 别名] 3. from 模块名 import * 1. import 模块名 [as 别名] 使用时需要再对象之前加上模块名作为前缀，必须以模块名.对象名的形式进行访问。
+1.6 标准库与扩展库中对象的导入与使用 1. import 模块名 [as 别名] 2. from 模块名 import 对象名 [as 别名] 3. from 模块名 import *   import 模块名 [as 别名]
+使用时需要再对象之前加上模块名作为前缀，必须以模块名.对象名的形式进行访问。
 模块名名字很长时可以设置别名，以别名.对象名的形式访问
-2. from 模块名 import 对象名 [as 别名] 导入明确指定的对象，并且可以起别名。不需要使用模块名作为前缀
-3. from 模块名 import * 一次导入模块中所有对象，可以直接使用模块中的所有对象而不需要再使用模块名作为前缀，一般不推荐
-1.7 Python程序的_name_属性 除了可以在开发环境中或命令提示符环境中直接运行，Python程序文件还可以作为模块导入并使用其中的对象。通过Python程序的_name_属性可以识别程序的使用方法，如果作为模块被导入，其属性的值被自动设置为模块名；如果作为程序直接运行，其属性值被设定为字符串“_main_&amp;quot;。</description>
-    </item>
-    
-    <item>
-      <title>My</title>
-      <link>https://github.com/Papertiger24/papertiger24.github.io/post/myfirst/</link>
-      <pubDate>Sat, 31 Oct 2020 15:00:21 +0800</pubDate>
-      
-      <guid>https://github.com/Papertiger24/papertiger24.github.io/post/myfirst/</guid>
-      <description>Hello everyone!</description>
+  from 模块名 import 对象名 [as 别名]
+导入明确指定的对象，并且可以起别名。不需要使用模块名作为前缀
+  from 模块名 import *
+一次导入模块中所有对象，可以直接使用模块中的所有对象而不需要再使用模块名作为前缀，一般不推荐
+  1.7 Python程序的__name__属性 除了可以在开发环境中或命令提示符环境中直接运行，Python程序文件还可以作为模块导入并使用其中的对象。通过Python程序的__name__属性可以识别程序的使用方法，如果作为模块被导入，其属性的值被自动设置为模块名；如果作为程序直接运行，其属性值被设定为字符串“__main__&amp;quot;。</description>
     </item>
     
   </channel>
